@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+.split {
+  height: 100%;
+  width: 50%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.left {
+  left: 0;
+  
+}
+
+.right {
+  right: 0;
+  
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.centered img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+</style>
+</head>
+<body>
+
+<div class="split left">
+  <div class="centered">
+      
+    <img src="/static/logo.PNG" height="200" width="2000">
+    
+  </div>
+</div>
+
+
+ <div class="split right">
+ <div class="centered">
+ 
+<form method="POST" action="/Decision_Prediction">
+<input type="submit" value="Decision Prediction">
+</form>
+
+ <br><br>
+
+<form method="POST" action="/ehr_sum">
+<input type="submit" value="EHR Summary">
+</form>
+	</div>
+	</div>
+
+</body>
+</html>
+
