@@ -1,32 +1,20 @@
 ## ML-Model-Flask-Deployment
-This is a demo project to elaborate how Machine Learn Models are deployed on production using Flask API
+- This is my Final year project to detect disease from the given symptoms and summarise the medical report based on EHR. 
 
 ### Prerequisites
-You must have Scikit Learn, Pandas (for Machine Leraning Model) and Flask (for API) installed.
+- You must have Scikit Learn, Pandas (for Machine Leraning Model) ,nltk library , pickle and Flask (for API) installed.
 
 ### Project Structure
 This project has four major parts :
-1. model.py - This contains code fot our Machine Learning model to predict employee salaries absed on trainign data in 'hiring.csv' file.
-2. app.py - This contains Flask APIs that receives employee details through GUI or API calls, computes the precited value based on our model and returns it.
-3. request.py - This uses requests module to call APIs already defined in app.py and dispalys the returned value.
-4. templates - This folder contains the HTML template to allow user to enter employee detail and displays the predicted employee salary.
+- college_doctor.py - This contains code fot our Machine Learning model to predict the disease from the user given symptoms.
+- summ.py - This contains code for text summarisation of EHR medical document to give summary report to the user reference.
 
 ### Running the project
-1. Ensure that you are in the project home directory. Create the machine learning model by running below command -
+1. Run college_doctor.py using below command to start the Flask server
 ```
-python model.py
-```
-This would create a serialized version of our model into a file model.pkl
-
-2. Run app.py using below command to start Flask API
-```
-python app.py
+python college_doctor.py
 ```
 
-3. Navigate to your LocalHost
+2. Navigate to your LocalHost
 
-4. You can also send direct POST requests to FLask API using Python's inbuilt request module
-Run the beow command to send the request with some pre-popuated values -
-```
-python request.py
-```
+
