@@ -1,4 +1,4 @@
-## ML-Model-Flask-Deployment
+## ML based Flask App for Disease prediction
 - This is my Final year project to detect disease from the given symptoms and summarise the medical report based on EHR. 
 
 ### Prerequisites
