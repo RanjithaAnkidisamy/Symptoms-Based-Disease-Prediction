@@ -5,7 +5,7 @@
 - You must have Scikit Learn, Pandas (for Machine Leraning Model) ,nltk library , pickle and Flask (for API) installed.
 
 ### Project Structure
-This project has four major parts :
+This project has two major parts :
 - college_doctor.py - This contains code fot our Machine Learning model to predict the disease from the user given symptoms.
 - summ.py - This contains code for text summarisation of EHR medical document to give summary report to the user reference.
 
